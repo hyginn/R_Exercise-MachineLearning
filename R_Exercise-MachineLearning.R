@@ -346,11 +346,24 @@ h2o.shutdown(prompt=FALSE)
 # of (male/female), make two features: isMale and isFemale and value them 0 or
 # 1. (h2o actually does this automatically.)
 
-# I would turn large categorical data into features by defining a number of "reference categories" - a set of genes, or well distinguished GO terms etc. and then calculating the similarity of my data point of interest to the references. For example, to turn the GO terms associated with TP53 into fatures, calculate the GO semantic similarities for each of the three ontologies to some, say, 50 different genes taken from very different aspects of cellular function, process and component.
+# I would turn large categorical data into features by defining a number of
+# "reference categories" - a set of genes, or well distinguished GO terms etc.
+# and then calculating the similarity of my data point of interest to the
+# references. For example, to turn the GO terms associated with TP53 into
+# fatures, calculate the GO semantic similarities for each of the three
+# ontologies to some, say, 50 different genes taken from very different aspects
+# of cellular function, process and component.
 
-# Levels can be combined: e.g. instead of full EC numbers use only the first two digits. Or, for levels of widely different numbers of membership, you can try combining by frequency: group the all the rare ones together, then the intermediate ones, then use the frequent ones as they are.
+# Levels can be combined: e.g. instead of full EC numbers use only the first two
+# digits. Or, for levels of widely different numbers of membership, you can try
+# combining by frequency: group the all the rare ones together, then the
+# intermediate ones, then use the frequent ones as they are.
 
 # If your data is binned into ranges, you can use the mean or median instead.
+
+# Finally, if you have ordered categorical data - e.g. time-series, you can use
+# "thermometer coding" - like dummy coding for a range of timepoint bins. cf.
+# http://stats.stackexchange.com/questions/257608/neural-network-with-ordered-categorical-output
 
 
 
