@@ -369,6 +369,9 @@ h2o.shutdown(prompt=FALSE)
 
 # ==== FURTHER READING =========================================================
 
+# LeCun, Y, Bengio, Y and Hinton G. Deep Learning. Nature (2015)
+# https://www.ncbi.nlm.nih.gov/pubmed/26017442
+
 # https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/deeplearning
 # http://stats.stackexchange.com/questions/95212/improve-classification-with-many-categorical-variables
 #
