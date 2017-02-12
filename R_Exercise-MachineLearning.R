@@ -2,11 +2,12 @@
 #
 # Purpose:
 #
-# Version: 1.0
+# Version: 1.0.1
 #
 # Date:    2017  02  10
 # Author:  Boris Steipe (boris.steipe@utoronto.ca)
 #
+# V 1.0.1  Fixed missed update of object name
 # V 1.0    First code
 #
 # TODO:
@@ -296,7 +297,7 @@ h2o.confusionMatrix(fit.h2o, as.h2o(crabsVal))
 # This result is not very impressive - 20/40 errors! h2o separates orange from
 # blue very well but does a terrible job at distinguishing male from female. cf.
 # our lda result:
-confusionMatrix(myPredictions, crabsVal$spsx)
+confusionMatrix(myPredLDA, crabsVal$spsx)
 # ... with only 2/40 errors.
 
 # Try to improve these results by tuning the parameters: ten-fold
